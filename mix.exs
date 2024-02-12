@@ -32,7 +32,7 @@ defmodule GhTlsTest.MixProject do
   def application do
     [
       mod: {GhTlsTest.Application, []},
-      extra_applications: [:logger]
+      extra_applications: [:logger, :xmerl]
     ]
   end
 
