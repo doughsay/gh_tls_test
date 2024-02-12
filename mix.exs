@@ -31,7 +31,7 @@ defmodule GhTlsTest.MixProject do
     [
       {:castore, ">= 0.0.0"},
       {:req, "~> 0.4"},
-      {:sweet_xml, "~> 0.7"},
+      # {:sweet_xml, "~> 0.7"},
       {:npm_deps, "~> 0.3"}
     ]
   end
