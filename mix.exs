@@ -14,7 +14,7 @@ defmodule GhTlsTest.MixProject do
   # Run "mix help compile.app" to learn about applications.
   def application do
     [
-      extra_applications: [:logger, :inet, :ssl]
+      extra_applications: [:logger, :inets, :ssl, :public_key]
     ]
   end
 
