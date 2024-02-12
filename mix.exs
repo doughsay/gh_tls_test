@@ -49,14 +49,10 @@ defmodule GhTlsTest.MixProject do
       {:req, "~> 0.4"},
       {:npm_deps, "~> 0.3", runtime: false},
       #
-      # {:postgrex, ">= 0.0.0"},
-      # {:styler, "~> 0.8", only: [:dev, :test], runtime: false},
+      {:postgrex, ">= 0.0.0"},
+      {:styler, "~> 0.8", only: [:dev, :test], runtime: false}
       # {:sweet_xml, "~> 0.7"},
       # {:swoosh, "~> 1.3"},
-      {:tailwind_formatter, "~> 0.4.0", only: [:dev, :test], runtime: false},
-      {:tailwind, "~> 0.2", runtime: Mix.env() == :dev},
-      {:telemetry_metrics, "~> 0.6"},
-      {:telemetry_poller, "~> 1.0"}
     ]
   end
 
