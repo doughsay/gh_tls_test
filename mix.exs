@@ -7,6 +7,7 @@ defmodule GhTlsTest.MixProject do
       version: "0.1.0",
       elixir: "~> 1.16",
       start_permanent: Mix.env() == :prod,
+      aliases: aliases(),
       deps: deps(),
       npm_deps: npm_deps()
     ]
@@ -32,6 +33,12 @@ defmodule GhTlsTest.MixProject do
       {:req, "~> 0.4"},
       {:sweet_xml, "~> 0.7"},
       {:npm_deps, "~> 0.3"}
+    ]
+  end
+
+  defp aliases do
+    [
+      "deps.get": ["deps.get", "npm_deps.get"]
     ]
   end
 end
