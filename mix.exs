@@ -49,10 +49,8 @@ defmodule GhTlsTest.MixProject do
       {:req, "~> 0.4"},
       {:npm_deps, "~> 0.3", runtime: false},
       #
-      {:postgrex, ">= 0.0.0"},
-      {:styler, "~> 0.8", only: [:dev, :test], runtime: false}
       # {:sweet_xml, "~> 0.7"},
-      # {:swoosh, "~> 1.3"},
+      {:swoosh, "~> 1.3"}
     ]
   end
 
