@@ -7,7 +7,8 @@ defmodule GhTlsTest.MixProject do
       version: "0.1.0",
       elixir: "~> 1.16",
       start_permanent: Mix.env() == :prod,
-      deps: deps()
+      deps: deps(),
+      npm_deps: npm_deps()
     ]
   end
 
@@ -18,12 +19,19 @@ defmodule GhTlsTest.MixProject do
     ]
   end
 
+  def npm_deps do
+    [
+      {:topbar, "2.0.2"}
+    ]
+  end
+
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
       {:castore, ">= 0.0.0"},
       {:req, "~> 0.4"},
-      {:sweet_xml, "~> 0.7"}
+      {:sweet_xml, "~> 0.7"},
+      {:npm_deps, "~> 0.3"}
     ]
   end
 end
