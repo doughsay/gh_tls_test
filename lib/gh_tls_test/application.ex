@@ -11,7 +11,7 @@ defmodule GhTlsTest.Application do
 
     # See https://hexdocs.pm/elixir/Supervisor.html
     # for other strategies and supported options
-    opts = [strategy: :one_for_one, name: Ambry.Supervisor]
+    opts = [strategy: :one_for_one, name: GhTlsTest.Supervisor]
     Supervisor.start_link(children(), opts)
   end
 
